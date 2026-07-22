@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="img/hand-sparkles-solid-full.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <title>La tienda del alquimista</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <h2 class="logo">⚗ La Tienda del Alquimista</h2>
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#elementos">Elementos</a></li>
+        <li><a href="#cesta">Cesta</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="cabecera" id="inicio">
+      <!-- Nombre de la startup -->
+      <h1>La tienda del alquimista</h1>
+      <!-- Frase de presentación -->
+      <h2><em>Creemos que toda gran transformación comienza con una chispa de curiosidad.</em></h2>
+
+      <!-- Descripción -->
+      <p>Bienvenido a <em>La Tienda del Alquimista</em>, el lugar donde toda gran creación comienza. Aquí encontrarás
+        los cuatro elementos primordiales: fuego, agua, tierra y aire, la base de toda práctica alquímica. Tanto si eres
+        un aprendiz como un maestro alquimista, reúne los elementos esenciales, experimenta con sus combinaciones y da
+        vida a nuevas creaciones. Explora nuestro catálogo y consigue los ingredientes fundamentales para tu próxima
+        fórmula.</p>
+      <p>La tienda de los alquimistas. Adquiere los cuatro elementos primordiales —fuego, agua, tierra y aire— y
+        comienza tus experimentos. Combínalos mediante el arte de la alquimia para descubrir nuevas posibilidades y
+        crear fórmulas únicas.</p>
+    </div>
+    <div class="elementos" id="elementos">
+      <h3>✨ Elementos primordiales ✨</h3>
+
+      <div class="agua">
+        <label for="cantidadAgua">🌊 Agua (5 €/unidad)</label>
+        <input type="number" id="cantidadAgua" placeholder="Unidades">
+        <button id="btnAgua">Añadir a la cesta</button>
+        <button id="btnResetAgua">Vaciar</button>
+        <div class="mensajeAgua"></div>
+        <p id="stockAgua">Stock disponible por compra: 50 unidades</p>
+      </div>
+
+      <div class="viento">
+        <label for="cantidadViento">🍃 Viento (6 €/unidad)</label>
+        <input type="number" id="cantidadViento" placeholder="Unidades">
+        <button id="btnViento">Añadir a la cesta</button>
+        <button id="btnResetViento">Vaciar</button>
+        <div class="mensajeViento"></div>
+        <p id="stockViento">Stock disponible por compra: 50 unidades</p>
+      </div>
+
+      <div class="fuego">
+        <label for="cantidadFuego">🔥 Fuego (7 €/unidad)</label>
+        <input type="number" id="cantidadFuego" placeholder="Unidades">
+        <button id="btnFuego">Añadir a la cesta</button>
+        <button id="btnResetFuego">Vaciar</button>
+        <div class="mensajeFuego"></div>
+        <p id="stockFuego">Stock disponible por compra: 50 unidades</p>
+      </div>
+
+      <div class="tierra">
+        <label for="cantidadTierra">🪴 Tierra (8 €/unidad)</label>
+        <input type="number" id="cantidadTierra" placeholder="Unidades">
+        <button id="btnTierra">Añadir a la cesta</button>
+        <button id="btnResetTierra">Vaciar</button>
+        <div class="mensajeTierra"></div>
+        <p id="stockTierra">Stock disponible por compra: 50 unidades</p>
+      </div>
+
+    </div>
+
+    <div class="cesta" id="cesta">
+      <h3>🧺 Cesta de la compra 🧺</h3>
+
+      <div class="bloqueCesta">
+        <div class="tituloBloque">
+          <p>Resumen del pedido</p>
+          <button id="btnResumen">Ver resumen</button>
+        </div>
+
+        <div class="mensajeResumen mensaje"></div>
+      </div>
+
+      <div class="bloqueCesta">
+        <div class="tituloBloque">
+          <p>Total de la cesta</p>
+          <button id="btnCesta">Calcular total</button>
+        </div>
+
+        <div class="mensajeCesta mensaje"></div>
+      </div>
+      <div class="botonesCesta">
+        <button id="btnComprar">Comprar</button>
+        <button id="btnReset">Vaciar la cesta</button>
+      </div>
+      <a href="#inicio">Ir a inicio</a>
+    </div>
+  </main>
+</body>
+
+<script src="https://kit.fontawesome.com/ac1029fced.js" crossorigin="anonymous"></script>
+<script src="alquimista.js"></script>
+
+</html>
